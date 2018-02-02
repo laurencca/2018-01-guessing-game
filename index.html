@@ -2,6 +2,22 @@
 <html>
   <head>
     <title>Hello World!</title>
+
+    <script type="text/javascript">
+      var userName = prompt("Who are you? What is your name?");
+      alert("Greetings " + name + "! Welcome to my website!");
+      console.log("User Name: "+userName);
+
+      var birthplace = confirm("Please answer: did I grow up in Oregon? Click 'OK' for 'YES, click 'CANCEL' for 'NO'");
+      console.log("Birthplace: "+birthplace);
+      if (birthplace) {
+        alert("You're right!");
+      } else {
+        alert("You stink!");
+      }
+
+    </script>
+
   </head>
   <body>
     <h1 id="top">Hello world!</h1>
@@ -54,11 +70,5 @@
     &copy; 2018<br>
     By Lauren Carroll-Allan</p>
     <p><a href="#top">Top</a></p>
-
-    <script type="text/javascript">
-      var name = prompt("Who are you? What is your name?");
-      alert("Greetings " + name + "! Welcome to my website!");
-    </script>
-
   </body>
 </html>
