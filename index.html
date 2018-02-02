@@ -8,7 +8,7 @@
       alert("Greetings " + name + "! Welcome to my website!");
       console.log("User Name: "+userName);
 
-      var birthplace = confirm("Please answer: did I grow up in Oregon? Click 'OK' for 'YES, click 'CANCEL' for 'NO'");
+      var birthplace = confirm("Did I grow up in Oregon? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
       console.log("Birthplace: "+birthplace);
       if (birthplace) {
         alert("You're right!");
@@ -16,6 +16,21 @@
         alert("You stink!");
       }
 
+      var college = confirm("Did I go to Reed College? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
+      console.log("College: "+college);
+      if (college) {
+          alert("You stink!");
+      } else {
+        alert("You're right!");
+      }
+
+      var currentHome = confirm("Do I live in Portland? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
+      console.log("Current Home: "+currentHome);
+      if (currentHome) {
+          alert("You stink!");
+      } else {
+        alert("You're right!");
+      }
     </script>
 
   </head>
