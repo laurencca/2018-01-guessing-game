@@ -6,11 +6,11 @@
     <script type="text/javascript">
       var userName = prompt("Who are you? What is your name?");
       alert("Greetings " + userName + "! Welcome to my website!");
-      console.log("User Name: "+userName);
+      console.log("User Name: " + userName);
 
-      var birthplace = confirm("Did I grow up in Oregon? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("Birthplace: "+birthplace);
-      if (birthplace) {
+      var birthplace = prompt("Did I grow up in Oregon?");
+      console.log("Birthplace: " + birthplace);
+      if (birthplace.toLowerCase() === "yes" || birthplace.toLowerCase() === "y") {
         alert("You're right, " + userName + " - I grew up in Oregon!");
       } else {
         alert("You're wrong, " + userName + " - I did grow up in Oregon. ");
