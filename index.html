@@ -13,20 +13,20 @@
       if (birthplace.toLowerCase() === "yes" || birthplace.toLowerCase() === "y") {
         alert("You're right, " + userName + " - I grew up in Oregon!");
       } else {
-        alert("You're wrong, " + userName + " - I did grow up in Oregon. ");
+        alert("You're wrong, " + userName + " - I did grow up in Oregon.");
       }
 
-      var college = confirm("Did I go to Reed College? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("College: "+college);
-      if (college) {
+      var college = prompt("Did I go to Reed College?");
+      console.log("College: " + college);
+      if (college.toLowerCase() === "yes" || college.toLowerCase() === "y") {
         alert("You're wrong, " + userName + " - I didn't go to Reed College. I went to Dartmouth College.");
       } else {
         alert("You're right, " + userName + " - I didn't go to Reed College. I went to Dartmouth College!");
       }
 
-      var currentHome = confirm("Do I live in Portland? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("Current Home: "+currentHome);
-      if (currentHome) {
+      var currentHome = prompt("Do I live in Portland?");
+      console.log("Current Home: " + currentHome);
+      if (currentHome.toLowerCase() === "yes" || currentHome.toLowerCase() === "y") {
         alert("You're wrong, " + userName + " - I don't live in Portland. I live in Hillsboro.");
       } else {
         alert("You're right, " + userName + " - I don't live in Portland. I live in Hillsboro!");
@@ -34,7 +34,7 @@
 
       var numberGuess = prompt("Pick a number between 1 - 20");
       var number = Number(numberGuess);
-      console.log("Number "+number);
+      console.log("Number " + number);
       if (number < 10) {
         alert("Sorry, " + userName + " - That number is too low.");
       } else if (number > 10) {
