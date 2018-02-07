@@ -2,10 +2,13 @@
   alert("Greetings " + userName + "! Welcome to my website!");
   console.log("User Name: " + userName);
 
+  var counter = 0;
+
   var birthplace = prompt("Did I grow up in Oregon?");
   console.log("Birthplace: " + birthplace);
   if (birthplace.toLowerCase() === "yes" || birthplace.toLowerCase() === "y") {
     alert("You're right, " + userName + " - I grew up in Oregon!");
+    counter++;
   } else {
     alert("You're wrong, " + userName + " - I did grow up in Oregon.");
   }
@@ -16,6 +19,7 @@
     alert("You're wrong, " + userName + " - I didn't go to Reed College. I went to Dartmouth College.");
   } else {
     alert("You're right, " + userName + " - I didn't go to Reed College. I went to Dartmouth College!");
+    counter++;
   }
 
   var currentHome = prompt("Do I live in Portland?");
@@ -24,6 +28,7 @@
     alert("You're wrong, " + userName + " - I don't live in Portland. I live in Hillsboro.");
   } else {
     alert("You're right, " + userName + " - I don't live in Portland. I live in Hillsboro!");
+    counter++;
   }
 
   var numberGuess = prompt("Pick a number between 1 - 20");
@@ -35,8 +40,9 @@
       alert("Sorry, " + userName + " - That number is too high.");
   } else if (number === 10) {
     alert("Great job, " + userName + " - that's the right number!");
+    counter++;
   } else {
     alert("That's not a valid entry, " + userName + ".");
   }
 
-  var correctGuess = document.write()
+    alert("Great job " + userName + " - you got " + counter + " questions right!");
