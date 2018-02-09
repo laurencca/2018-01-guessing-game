@@ -22,48 +22,6 @@ askquestion("Did I grow up in Oregon?", "yes", "I did grow up in Oregon!", "ques
 askquestion("Did I go to Reed College?", "no", "I didn't go to Reed College. I went to Dartmouth College.", "question2");
 askquestion("Do I live in Portland?", "no", "I don't live in Portland. I live in Hillsboro!", "question3");
 
-/*function birthplace(){
-  var answer = prompt("Did I grow up in Oregon?");
-  var message = "";
-  console.log("Birthplace: " + answer);
-  if (answer.toLowerCase() === "yes" || answer.toLowerCase() === "y") {
-    message = ". You're right, " + userName + " - I grew up in Oregon!";
-    counter++;
-  } else {
-    message = ". You're wrong, " + userName + " - I did grow up in Oregon.";
-  }
-  document.getElementById("question1").innerHTML = answer + message;
-}
-birthplace();
-
-function college(){
-  var answer = prompt("Did I go to Reed College?");
-  var message = "";
-  console.log("College: " + answer);
-  if (answer.toLowerCase() === "yes" || answer.toLowerCase() === "y") {
-    message = ". You're wrong, " + userName + " - I didn't go to Reed College. I went to Dartmouth College.";
-  } else {
-    message = ". You're right, " + userName + " - I didn't go to Reed College. I went to Dartmouth College!";
-    counter++;
-  }
-  document.getElementById("question2").innerHTML = answer + message;
-}
-college();
-
-function currentHome(){
-  var answer = prompt("Do I live in Portland?");
-  var message = "";
-  console.log("Current Home: " + answer);
-  if (answer.toLowerCase() === "yes" || answer.toLowerCase() === "y") {
-    message = ". You're wrong, " + userName + " - I don't live in Portland. I live in Hillsboro.";
-  } else {
-    message = ". You're right, " + userName + " - I don't live in Portland. I live in Hillsboro!";
-    counter++;
-  }
-  document.getElementById("question3").innerHTML = answer + message;
-}
-currentHome();*/
-
 function numberGuess(){
   var answer = 0;
   var message = "";
