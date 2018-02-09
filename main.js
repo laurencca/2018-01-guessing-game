@@ -4,7 +4,25 @@ console.log("User Name: " + userName);
 
 var counter = 0;
 
-function birthplace(){
+function askquestion(question, correctAnswer, extraInfo, location) {
+  var answer = prompt(question);
+  console.log("Question: " + question);
+  console.log("Answer  : " + answer);
+  var message = "";
+  if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
+    message = ". You're right, " + userName + " - " + extraInfo;
+    counter++;
+  } else {
+    message = ". You're wrong, " + userName + " - " + extraInfo;
+  }
+  document.getElementById(location).innerHTML = answer + message;
+}
+
+askquestion("Did I grow up in Oregon?", "yes", "I did grow up in Oregon!", "question1");
+askquestion("Did I go to Reed College?", "no", "I didn't go to Reed College. I went to Dartmouth College.", "question2");
+askquestion("Do I live in Portland?", "no", "I don't live in Portland. I live in Hillsboro!", "question3");
+
+/*function birthplace(){
   var answer = prompt("Did I grow up in Oregon?");
   var message = "";
   console.log("Birthplace: " + answer);
@@ -44,14 +62,14 @@ function currentHome(){
   }
   document.getElementById("question3").innerHTML = answer + message;
 }
-currentHome();
+currentHome();*/
 
 function numberGuess(){
   var answer = 0;
   var message = "";
-  console.log("Number " + answer);
   while (answer != 10){
     answer = Number(prompt("Pick a number between 1 - 20"));
+    console.log("Number  : " + answer);
     if (answer < 10) {
       message = ". Sorry, " + userName + " - That number is too low.";
     } else if (answer > 10) {
