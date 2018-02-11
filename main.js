@@ -2,18 +2,23 @@ var userName = prompt("Who are you? What is your name?");
 alert("Greetings " + userName + "! Welcome to my website!");
 console.log("User Name: " + userName);
 
+
 var counter = 0;
+var rightImage = "<img src='./images/checkmark.jpg' alt='You\'re Right!' width=50 height=50/>"
+var wrongImage = "<img src='./images/xmark.jpg' alt='You\'re Wrong!' width=50 height=50/>"
 
 function askQuestion(question, correctAnswer, extraInfo, location) {
   var answer = prompt(question);
+  var message = "";
   console.log("Question: " + question);
   console.log("Answer  : " + answer);
-  var message = "";
+
   if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
-    message = ". You're right, " + userName + " - " + extraInfo + "<br />" + "<img src='./images/checkmark.jpg' alt='You\'re Right!' width=50 height=50/>";
+    message = ". " + "<span class='rightAnswer'>You're right, " + userName + " - " + extraInfo + "</span><br />" + rightImage;
+
     counter++;
   } else {
-    message = ". You're wrong, " + userName + " - " + extraInfo + "<br />" + "<img src='./images/xmark.jpg' alt='You\'re Wrong!' width=50 height=50/>";
+    message = ". " + "<span class='wrongAnswer'>You're wrong, " + userName + " - " + extraInfo + "</span><br />" + wrongImage;
   }
   document.getElementById(location).innerHTML = answer + message;
 }
@@ -33,7 +38,7 @@ function numberGuess(){
     } else if (answer > 10) {
       message = ". Sorry, " + userName + " - That number is too high.";
     } else if (answer === 10) {
-      message = ". Great job, " + userName + " - that's the right number!" + "<br />" + "<img src='./images/checkmark.jpg' alt='You\'re Right!' width=50 height=50/>";
+      message = ". " + "<span class='rightAnswer'>Great job, " + userName + " - that's the right number!</span><br />" + rightImage;
       counter++;
     } else {
       message = ". That's not a valid entry, " + userName + ".";
@@ -43,4 +48,4 @@ function numberGuess(){
 }
 numberGuess();
 
-document.getElementById("question5").innerHTML = "Great job " + userName + " - you got " + counter + " questions right!";
+document.getElementById("quizCount").innerHTML = "Great job " + userName + " - you got " + counter + " questions right!";

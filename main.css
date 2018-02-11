@@ -38,9 +38,17 @@ h1 {
 }
 
 h2 {
-  color: #66cc99;
+  color: #751aff;
   margin: 1.5%;
   text-decoration: underline;
+}
+
+ul {
+  padding-left: 80px;
+}
+
+ol {
+  padding-left: 80px;
 }
 
 a:link {
@@ -66,10 +74,29 @@ a:active {
   indent: 10px
 }
 
+.rightAnswer {
+  color: green;
+  font-weight: bold;
+}
+
+.wrongAnswer {
+  color: red;
+  font-weight: bold;
+}
+
+#quizCount {
+  font-weight: bold;
+}
+
 #footer {
   text-align: center;
 }
 
-#familyphoto {
+#familyPhoto {
   text-align: center;
+}
+
+#familyPhoto img {
+  height: 400px;
+  width: 400px;
 }
