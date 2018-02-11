@@ -1,102 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello World!</title>
+<head>
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
 
-    <script type="text/javascript">
-      var userName = prompt("Who are you? What is your name?");
-      alert("Greetings " + userName + "! Welcome to my website!");
-      console.log("User Name: "+userName);
+<body>
 
-      var birthplace = confirm("Did I grow up in Oregon? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("Birthplace: "+birthplace);
-      if (birthplace) {
-        alert("You're right, " + userName + " - I grew up in Oregon!");
-      } else {
-        alert("You're wrong, " + userName + " - I did grow up in Oregon. ");
-      }
+  <div id="all">
 
-      var college = confirm("Did I go to Reed College? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("College: "+college);
-      if (college) {
-        alert("You're wrong, " + userName + " - I didn't go to Reed College. I went to Dartmouth College.");
-      } else {
-        alert("You're right, " + userName + " - I didn't go to Reed College. I went to Dartmouth College!");
-      }
+    <h1 id="top">Hello World!</h1>
 
-      var currentHome = confirm("Do I live in Portland? Click 'OK' for 'YES', click 'CANCEL' for 'NO'");
-      console.log("Current Home: "+currentHome);
-      if (currentHome) {
-        alert("You're wrong, " + userName + " - I don't live in Portland. I live in Hillsboro.");
-      } else {
-        alert("You're right, " + userName + " - I don't live in Portland. I live in Hillsboro!");
-      }
+    <div id="familyPhoto">
+      <img src="./images/coverimage.jpg" alt="Carroll-Allan family pets">
+    </div>
 
-      var numberGuess = prompt("Pick a number between 1 - 20");
-      var number = Number(numberGuess);
-      console.log("Number "+number);
-      if (number < 10) {
-        alert("Sorry, " + userName + " - That number is too low.");
-      } else if (number > 10) {
-          alert("Sorry, " + userName + " - That number is too high.");
-      } else if (number === 10) {
-        alert("Great job, " + userName + " - that's the right number!");
-      } else {
-        alert("That's not a valid entry, " + userName + ".");
-      }
-    </script>
-
-  </head>
-  <body>
-    <h1 id="top">Hello world!</h1>
     <h2>Contents</h2>
+    <ul id="contents">
+      <li><a href="#quiz">Quiz Answers</a></li>
+      <li><a href="#name">Name</a></li>
+      <li><a href="#biography">Biography</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#goals">Goals</a></li>
+    </ul>
 
+    <h2 id="quiz">Quiz Answers</h2>
+    <p>User answers are displayed here:</p>
       <ul>
-        <li><a href="#Name">Name</a></li>
-        <li><a href="#Biography">Biography</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Education">Education</a></li>
-        <li><a href="#Goals">Goals</a></li>
+        <li id="question1"></li>
+        <li id="question2"></li>
+        <li id="question3"></li>
+        <li id="question4"></li>
       </ul>
+    <p id="quizCount"></p>
+    <br />
 
-    <h2 id="Name">Name</h2>
-      <p>My name is Lauren Carroll-Allan. Nice to meet you!</p><a href="#top">Top</a>
+      <h2 id="name">Name</h2>
+      <p>My name is Lauren Carroll-Allan. Nice to meet you!</p>
+      <p><a href="#top"><span class="return">Top</span></a></p>
 
-    <h2 id="Biography">Biography</h2>
+      <h2 id="biography">Biography</h2>
       <p>I was born in Portland, and after a short stint out in the sticks, lived
         in Portland from 3rd grade through high school. I went to Alameda Elementary,
         Beaumont Middle School, and Lincoln High School. I studied Russian language
         and literature through college and grad school, went to law school for a bit
         in between, and ended up in California for about 12 years doing nothing
         whatsoever related to Russian.</p>
-      <p>Last January I moved home to Oregon, bought a house in Hillsboro with my
-        husband, two dogs, and cat, and have been readjusting to life in the PNW.
-        In November I was laid off from my job, so I have been busy reassessing my
-        career and applying for jobs.</p><a href="#top">Top</a>
+        <p>Last January I moved home to Oregon, bought a house in Hillsboro with my
+          husband, two dogs, and cat, and have been readjusting to life in the PNW.
+          In November I was laid off from my job, so I have been busy reassessing my
+          career and applying for jobs.</p>
+          <p><a href="#top"><span class="return">Top</span></a></p>
 
-    <h2 id="Experience">Experience</h2>
-      <p>I have worked as an executive assistant, facilities manager, insurance manager
-        office manager, event planner, and purchasing manager - bascially all sorts of
-        administrative functions in corporate, non-profit, and educational environments.</p>
-        <a href="#top">Top</a>
+          <h2 id="experience">Experience</h2>
+          <p>I have worked as an executive assistant, facilities manager, insurance manager
+            office manager, event planner, and purchasing manager - bascially all sorts of
+            administrative functions in corporate, non-profit, and educational environments.</p>
+            <p><a href="#top"><span class="return">Top</span></a></p>
 
-    <h2 id="Education">Education</h2>
-      <p>I have a B.A. in Russian Language and Literature from Dartmouth College, and
-        an M.A. in Slavic Languages and Literatures from Stanford University. And now
-        I'm studying coding at Alchemy Code Lab, and taking a course to become a
-        Certified Scrum Master.</p><a href="#top">Top</a>
+            <h2 id="education">Education</h2>
+            <p>I have a B.A. in Russian Language and Literature from Dartmouth College, and
+              an M.A. in Slavic Languages and Literatures from Stanford University. And now
+              I'm studying coding at Alchemy Code Lab, and taking a course to become a
+              Certified Scrum Master.</p>
+              <p><a href="#top"><span class="return">Top</span></a></p>
 
-    <h2 id="Goals">Goals</h2>
-      <p>My goals are the following:
-        <ol>
-          <li>Get out of administrative work - it's so boring!</li>
-          <li>Challenge myself and learn something totally scary &amp; new - i.e., coding</li>
-          <li>Get a job that engages my brain and increases my earning potential.</li>
-        </ol></p><a href="#top">Top</a>
+              <h2 id="goals">Goals</h2>
+              <p>My goals are the following:
+                <ol>
+                  <li>Get out of administrative work - it's so boring!</li>
+                  <li>Challenge myself and learn something totally scary &amp; new - i.e., coding</li>
+                  <li>Get a job that engages my brain and increases my earning potential.</li>
+                </ol>
+                <p><a href="#top"><span class="return">Top</span></a></p>
 
-    <p>Bootcamp Coding Assignment #1 - Hello World!&trade;<br>
-    &copy; 2018<br>
-    By Lauren Carroll-Allan</p>
-    <p><a href="#top">Top</a></p>
-  </body>
-</html>
+                <div id="footer">
+                  <p>Bootcamp Coding Assignment #1 - Hello World!&trade;<br>
+                    &copy; 2018<br>
+                    By Lauren Carroll-Allan</p>
+                  </div>
+
+                  <script type="text/javascript" src="main.js"></script>
+                </div>
+              </body>
+              </html>

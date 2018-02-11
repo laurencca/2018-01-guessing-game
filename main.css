@@ -1,0 +1,102 @@
+body {
+  background-color: #e6e6e6;
+  font-family: Courier;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #3385ff;
+  padding: 5px;
+}
+
+#all {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+p {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 1.5%;
+  vertical-align: top;
+}
+
+h1 {
+  color: #3385ff;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  border: 2px solid;
+  padding: 5px;
+  margin: 1.5%;
+}
+
+h2 {
+  color: #751aff;
+  margin: 1.5%;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 80px;
+}
+
+ol {
+  padding-left: 80px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ff6600
+}
+
+a:visited {
+    text-decoration: none;
+    color: #990099
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.return {
+  font-size: 15px;
+  indent: 10px
+}
+
+.rightAnswer {
+  color: green;
+  font-weight: bold;
+}
+
+.wrongAnswer {
+  color: red;
+  font-weight: bold;
+}
+
+#quizCount {
+  font-weight: bold;
+}
+
+#footer {
+  text-align: center;
+}
+
+#familyPhoto {
+  text-align: center;
+}
+
+#familyPhoto img {
+  height: 400px;
+  width: 400px;
+}
