@@ -4,23 +4,23 @@ console.log("User Name: " + userName);
 
 var counter = 0;
 
-function askquestion(question, correctAnswer, extraInfo, location) {
+function askQuestion(question, correctAnswer, extraInfo, location) {
   var answer = prompt(question);
   console.log("Question: " + question);
   console.log("Answer  : " + answer);
   var message = "";
   if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
-    message = ". You're right, " + userName + " - " + extraInfo;
+    message = ". You're right, " + userName + " - " + extraInfo + "<br />" + "<img src='./images/checkmark.jpg' alt='You\'re Right!' width=50 height=50/>";
     counter++;
   } else {
-    message = ". You're wrong, " + userName + " - " + extraInfo;
+    message = ". You're wrong, " + userName + " - " + extraInfo + "<br />" + "<img src='./images/xmark.jpg' alt='You\'re Wrong!' width=50 height=50/>";
   }
   document.getElementById(location).innerHTML = answer + message;
 }
 
-askquestion("Did I grow up in Oregon?", "yes", "I did grow up in Oregon!", "question1");
-askquestion("Did I go to Reed College?", "no", "I didn't go to Reed College. I went to Dartmouth College.", "question2");
-askquestion("Do I live in Portland?", "no", "I don't live in Portland. I live in Hillsboro!", "question3");
+askQuestion("Did I grow up in Oregon?", "yes", "I did grow up in Oregon!", "question1");
+askQuestion("Did I go to Reed College?", "no", "I didn't go to Reed College. I went to Dartmouth College.", "question2");
+askQuestion("Do I live in Portland?", "no", "I don't live in Portland. I live in Hillsboro!", "question3");
 
 function numberGuess(){
   var answer = 0;
@@ -33,7 +33,7 @@ function numberGuess(){
     } else if (answer > 10) {
       message = ". Sorry, " + userName + " - That number is too high.";
     } else if (answer === 10) {
-      message = ". Great job, " + userName + " - that's the right number!";
+      message = ". Great job, " + userName + " - that's the right number!" + "<br />" + "<img src='./images/checkmark.jpg' alt='You\'re Right!' width=50 height=50/>";
       counter++;
     } else {
       message = ". That's not a valid entry, " + userName + ".";
